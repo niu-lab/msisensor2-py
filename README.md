@@ -37,7 +37,7 @@ N: 0 0 0 0 0 1 0 0 0 2 2 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 T: 0 0 0 0 0 0 0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 ````
 ````
-python msisensor.py -s /home/lirl/msisensor/test/example.microsate.sites -t test/example.tumor.bam -n test/example.normal.bam -p test/output_p_value.txt -o test/output_dis_file.txt
+python msisensor.py -s test/example.microsate.sites -t test/example.tumor.bam -n test/example.normal.bam -p test/output_p_value.txt -o test/output_dis_file.txt
 ````
 
 2. Generate sites_list.txt Generate sites_list.txt after deleting X, Y, and Un chromosomes:
