@@ -1,4 +1,4 @@
-MSIsensor2(Python version)
+MSIsensor2 (Python version)
 ===========
 MSIsensor2 is a novel algorithm based machine learning, featuring a large upgrade in the microsatellite instability (MSI) detection for tumor only sequencing data, including Cell-Free DNA (cfDNA), Formalin-Fixed Paraffin-Embedded(FFPE) and other sample types. The original MSIsensor is specially designed for tumor/normal paired sequencing data.
 
@@ -74,7 +74,7 @@ Test sample
 -------
 We provided one small dataset (tumor only bam file) to test the msi scoring step:
 ````
-source /home/sczhuhd/.bashrc; sh submit_test.sh TCGA-CRC
+source /your_dir/.bashrc; sh submit_test.sh your_data_name
 ````
 The test result for TCGA-CRC is in ./test.
 
