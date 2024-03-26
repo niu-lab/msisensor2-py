@@ -37,7 +37,7 @@ N: 0 0 0 0 0 1 0 0 0 2 2 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 T: 0 0 0 0 0 0 0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 ````
 ````
-python3 msisensor.py -s /home/lirl/msisensor/test/example.microsate.sites -t test/example.tumor.bam -n test/example.normal.bam -p test/output_p_value.txt -o test/output_dis_file.txt
+python msisensor.py -s /home/lirl/msisensor/test/example.microsate.sites -t test/example.tumor.bam -n test/example.normal.bam -p test/output_p_value.txt -o test/output_dis_file.txt
 ````
 
 2. Generate sites_list.txt Generate sites_list.txt after deleting X, Y, and Un chromosomes:
@@ -60,7 +60,7 @@ sh submit_test.sh
 Output
 -------
 
-output.txt: The result of model prediction for samples: input_sample_dis_file_name\tMSIscore\tuns_num\tsta_num
+output.txt: The result of model prediction for samples: input_sample_dis_file_name  MSIscore  uns_num  sta_num
 ````
 TCGA-3L-AA1B_dis-MSS 0.0356259277585 72 1949
 TCGA-4N-A93T_dis-MSS 0.0380085653105 71 1797
@@ -82,5 +82,7 @@ The test result for TCGA-CRC is in ./test.
 Contact
 -------
 If you have any questions, please contact one or more of the following folks:
+
 Beifang Niu <bniu@sccas.cn>
+
 Ruilin Li <lirl@sccas.cn>
