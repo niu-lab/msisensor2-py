@@ -74,15 +74,11 @@ Test sample
 -------
 We provided one small dataset (tumor only bam file) to test the msi scoring step:
 ````
-source /your_dir/.bashrc; sh submit_test.sh your_data_name
+source /your_dir/.bashrc; sh test/submit_test.sh TCGA-CRC
 ````
 The test result for TCGA-CRC is in ./test.
 
 
 Contact
 -------
-If you have any questions, please contact one or more of the following folks:
-
-Beifang Niu <bniu@sccas.cn>
-
-Ruilin Li <lirl@sccas.cn>
+If you have any questions, please contact one or more of the following folks: Beifang Niu <bniu@sccas.cn> or Ruilin Li <lirl@sccas.cn>
