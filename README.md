@@ -12,10 +12,10 @@ Usage
 Parameters:
 -------
 
-        input_sample_dis_file_name: The name of sample that need to be predicted
-        input_sites_list: List of training sites corresponding to all training site models
-        input_models_dir: Directory for training models
-        output_file: Output file of model prediction results
+        input_sample_dis_file_name <input>  : the name of sample that need to be predicted
+        input_sites_list           <input>  : list of training sites corresponding to all training site models
+        input_models_dir           <input>  : directory for training models
+        output_file                <output> : output file of model prediction results
 
 
 Install:
@@ -38,6 +38,23 @@ T: 0 0 0 0 0 0 0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 ````
 ````
 python msisensor.py -s test/example.microsate.sites -t test/example.tumor.bam -n test/example.normal.bam -p test/output_p_value.txt -o test/output_dis_file.txt
+````
+
+Notes: usage of msisensor.py
+````
+Usage:
+
+        python msisensor.py -s sites_list -t input.tumor.bam -n input.normal.bam -p output.p.value -o output.dis
+
+        Option:
+            -s, --site-list     <file>  the MSI sites file
+            -t, --tumor-bam     <file>  the tumor bam input file
+            -n, --nornal-bam    <file>  the normal bam input file
+            -p, --p-value-file  <file>  the output of p value
+            -o, --output-dis    <file>  the output of distribution for MSI sites
+
+            -h, --help  help
+
 ````
 
 2. Generate sites_list.txt after deleting X, Y, and Un chromosomes:
