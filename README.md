@@ -30,7 +30,7 @@ You may already have these prerequisite packages.
 
 Example
 -------
-1. Generate distribution files for predicted samples(that is input_sample_dis_file_name) using MSIsensor(python version)  for example:
+1. Generate distribution files for predicted samples (that is input_sample_dis_file_name) using MSIsensor(python version)  for example:
 ````
 chr1 30867 TCTCC 12[CT] CATTT
 N: 0 0 0 0 0 1 0 0 0 2 2 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
@@ -40,7 +40,7 @@ T: 0 0 0 0 0 0 0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 python msisensor.py -s test/example.microsate.sites -t test/example.tumor.bam -n test/example.normal.bam -p test/output_p_value.txt -o test/output_dis_file.txt
 ````
 
-2. Generate sites_list.txt Generate sites_list.txt after deleting X, Y, and Un chromosomes:
+2. Generate sites_list.txt after deleting X, Y, and Un chromosomes:
 ````
 cat model_dir/sites_list.txt |grep -v "chrX"|grep -v "chrY"|grep -v "chrUn"|grep -v "random" > ./sites_list.txt
 echo -e "input_sample_dis_file_name \c" >> output.txt
@@ -76,7 +76,7 @@ We provided one small dataset (tumor only bam file) to test the msi scoring step
 ````
 source /your_dir/.bashrc; sh test/submit_test.sh TCGA-CRC
 ````
-The test result for TCGA-CRC is in ./test.
+The test result TCGA-CRC.txt for TCGA-CRC is in ./test.
 
 
 Contact
