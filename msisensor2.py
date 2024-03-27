@@ -84,7 +84,7 @@ class MSIPredict(object):
 
 if __name__ == '__main__':
     if len(sys.argv) != 4:
-        print "python msi_predict.py output_dis sites_list.txt models"
+        print "python msisensor2.py output_dis sites_list.txt models"
         exit()
     else:
         mst = MSIPredict()
