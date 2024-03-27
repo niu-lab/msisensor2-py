@@ -224,12 +224,12 @@ def check(argv):
         print('''
         python msisensor.py -s sites_list -t input.tumor.bam -n input.normal.bam -p output.p.value -o output.dis
         
-        Option:
-            -s, --site-list     <file>  the MSI sites file
-            -t, --tumor-bam     <file>  the tumor bam input file
-            -n, --nornal-bam    <file>  the normal bam input file
-            -p, --p-value-file  <file>  the output of p value
-            -o, --output-dis    <file>  the output of distribution for MSI sites
+        Options:
+            -s, --site-list     <input>   the MSI sites file
+            -t, --tumor-bam     <input>   the tumor bam input file
+            -n, --nornal-bam    <input>   the normal bam input file
+            -p, --p-value-file  <output>  the output of p value
+            -o, --output-dis    <output>  the output of distribution for MSI sites
             
             -h, --help  help
         ''')
